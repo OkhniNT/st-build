@@ -888,8 +888,8 @@ xhints(void)
 	sizeh->flags = PSize | PResizeInc | PBaseSize | PMinSize;
 	sizeh->height = win.h;
 	sizeh->width = win.w;
-	sizeh->height_inc = borderpx;
-	sizeh->width_inc = borderpx;
+	sizeh->height_inc = borderpx / 2;
+	sizeh->width_inc = borderpx / 2;
 	sizeh->base_height = 2 * borderpx;
 	sizeh->base_width = 2 * borderpx;
 	sizeh->min_height = win.ch + 2 * borderpx;
